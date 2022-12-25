@@ -23,6 +23,6 @@ int main()
 	
 	for(i=0 ; i<n ; i++)
 	{
-		cout << "Cube is : " << b[i] << endl;
+		cout << endl << "Cube is : " << b[i] << endl;
 	}
 }
