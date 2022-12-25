@@ -196,8 +196,6 @@
     #include<iostream>
     using namespace std;
 
-    //id, stu_name, stu_roll_no, stu_standard, stu_age, stu_contact, stu_edu_institute_name and stu_address//
-
     class highSchool{
         private:
             int id;
@@ -355,9 +353,547 @@
         s.setData();
         s.getData();
     }
+
 ><u>**Output**</u> : 
 
 ![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_5/Screenshot_20221225_104617.png)
 
 <br>
 
+><u>**Aim**</u> : 6. WAP to demonstrate example of default constructor or no argument constructor.
+
+><u>**Program**</u> : 
+
+    #include<iostream>
+    using namespace std;
+
+    class hotel{
+        public:
+            hotel (){ 
+                cout << "Welcome to the BLUE-VELLY HOTEL.." << endl;
+            }
+    };
+
+    int main()
+    {
+        hotel h;
+    }
+
+><u>**Output**</u> : 
+
+![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_6/Screenshot_20221225_104733.png)
+
+<br>
+
+><u>**Aim**</u> : 7. WAP to demonstrate example of parameterized constructor.
+
+><u>**Program**</u> : 
+
+    #include<iostream>
+    using namespace std;
+
+    class hotel{
+        private:
+            int id;
+            string name;
+        public:
+            hotel(int id , string name)
+            {
+                this->id = id;
+                this->name = name;
+                
+                cout << "Id\t : " << id << endl;
+                cout << "Name\t : " << name << endl;
+            }	
+    };
+
+    int main()
+    {
+        hotel h(101 , "John Deo");
+    }
+
+><u>**Output**</u> : 
+
+![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_7/Screenshot_20221225_104831.png)
+
+<br>
+
+><u>**Aim**</u> : 8. WAP to demonstrate example of copy constructor.
+
+><u>**Program**</u> : 
+
+    #include<iostream>
+    using namespace std;
+
+    class hotel{
+        private:
+            int id;
+            string name;
+        public:
+            
+            hotel(int id , string name)
+            {
+                this->id = id;
+                this->name = name;
+                getData();
+            }
+            
+            hotel(hotel &h)
+            {
+                id = h.id;
+                name = h.name;
+                getData();	
+            }
+            void getData()
+            {
+                cout << "Id\t : " << id << endl
+                    << "H_name\t : " << name << endl;	
+            }
+    };
+
+    int main()
+    {
+        hotel h1(1,"Navjivan");
+        hotel h2(2,"Amiras");
+        hotel h3(3,"Avadh");
+        hotel h4 = h1;
+        h4.getData();
+        hotel h5(h2);
+        
+    }
+
+><u>**Output**</u> : 
+
+![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_8/Screenshot_20221225_104920.png)
+
+<br>
+
+><u>**Aim**</u> : 9. WAP to demonstrate example of destructors.
+
+><u>**Program**</u> : 
+
+    #include<iostream>
+    using namespace std;
+
+    class hotel{
+        private:
+            int id;
+            string name;
+            static int count;
+        public:
+            hotel()
+            {
+                id = count;
+                cout << "Id\t : " << id << endl;
+                count++;
+            }
+            
+            ~hotel()
+            {
+                cout << "Id : " << id << " is deleted.." << endl;
+            }	
+    };
+
+    int hotel::count=1;
+
+    int main()
+    {
+        hotel h[10];
+    }
+
+><u>**Output**</u> : 
+
+![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_9/Screenshot_20221225_105028.png)
+
+<br>
+
+><u>**Aim**</u> : 10. WAP to create a class which Set values of data members using default, parameterized and copy constructor.
+
+><u>**Program**</u> : 
+
+    #include<iostream>
+    using namespace std;
+
+    class hotel{
+        private:
+            int id;
+            string name;
+        public:
+            hotel ()
+            { 
+                cout << "Welcome to the BLUE-VELLY HOTEL.." << endl << endl;
+            }
+                
+            hotel(int id , string name)
+            {
+                this->id = id;
+                this->name = name;
+                getData();
+            }
+            
+            hotel(hotel &h)
+            {
+                id = h.id;
+                name = h.name;
+                getData();	
+            }
+            void getData()
+            {
+                cout << "Id\t : " << id << endl
+                    << "H_name\t : " << name << endl;	
+            }
+    };
+
+    int main()
+    {
+        hotel h;
+        hotel h1(1,"Navjivan");
+        hotel h2(2,"Amiras");
+        hotel h3(3,"Avadh");
+        hotel h4 = h1;
+        h4.getData();
+        hotel h5(h2);
+    }
+
+><u>**Output**</u> : 
+
+![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_10/Screenshot_20221225_105119.png)
+
+<br>
+
+><u>**Aim**</u> : 11. WAP to create a class which illustrate the use of constant object.
+
+><u>**Program**</u> : 
+
+    #include<iostream>
+    using namespace std;
+
+    class emp{
+        private:
+            int id;
+            string name;
+            int age;
+            double exp;
+        public:
+            void setData(int i , int n)
+            {
+                system("cls");
+                cout << "Employee no. : " << i << "/" << n << endl;
+                
+                cout << "Enter Employee id : ";
+                cin >> id;
+                cout << "Enter Employee name : ";
+                cin >> name;
+                cout << "Enter Employee age : ";
+                cin >> age;
+                cout << "Enter Employee Exp : ";
+                cin >> exp;
+            }
+            void getData()
+            {
+                cout << endl << "Id\t : " << id << endl
+                            << "Name\t : " << name << endl
+                            << "Age\t : " << age << endl
+                            << "Exp\t : " << exp << endl;
+            }	
+            static void header()
+            {
+                system("cls");
+                cout << "Id\tName\tAge\tExp\n======= ======= ======= =======\n";
+            }
+            void getDataInTable()
+            {
+                cout << id << "\t" << name << "\t" << age << "\t" << exp << endl;
+            }
+    };
+
+    int main()
+    {
+        int n,i;
+        
+        cout << "Enter the Number of Employee : ";
+        cin >> n;
+        
+        emp e[n];
+        
+        for(i=0 ; i<n ; i++)
+        {
+            e[i].setData(i+1,n);
+        }
+        
+        emp::header();
+        
+        for(i=0 ; i<n ; i++)
+        {
+            e[i].getDataInTable();
+        }
+    }
+
+><u>**Output**</u> : 
+
+![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_11/Screenshot_20221225_105418.png)
+
+<br>
+
+><u>**Aim**</u> : 10. WAP to create a class which Set values of data members using default, parameterized and copy constructor.
+
+><u>**Program**</u> : 
+
+    #include<iostream>
+    using namespace std;
+
+    class hotel{
+        private:
+            int id;
+            string name;
+        public:
+            hotel ()
+            { 
+                cout << "Welcome to the BLUE-VELLY HOTEL.." << endl << endl;
+            }
+                
+            hotel(int id , string name)
+            {
+                this->id = id;
+                this->name = name;
+                getData();
+            }
+            
+            hotel(hotel &h)
+            {
+                id = h.id;
+                name = h.name;
+                getData();	
+            }
+            void getData()
+            {
+                cout << "Id\t : " << id << endl
+                    << "H_name\t : " << name << endl;	
+            }
+    };
+
+    int main()
+    {
+        hotel h;
+        hotel h1(1,"Navjivan");
+        hotel h2(2,"Amiras");
+        hotel h3(3,"Avadh");
+        hotel h4 = h1;
+        h4.getData();
+        hotel h5(h2);
+    }
+
+><u>**Output**</u> : 
+
+![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_10/Screenshot_20221225_105119.png)
+
+<br>
+
+><u>**Aim**</u> : 12. WAP to create a class for student to get and print details of N students. (with use of array of objects)
+
+><u>**Program**</u> : 
+
+    #include<iostream>
+    using namespace std;
+
+    class student{
+        private:
+            int id;
+            string name;
+            int age;
+            int std;
+        public:
+            void setData(int i , int n)
+            {
+                system("cls");
+                cout << "Student no. : " << i << "/" << n << endl;
+                
+                cout << "Enter student id : ";
+                cin >> id;
+                cout << "Enter student name : ";
+                cin >> name;
+                cout << "Enter student age : ";
+                cin >> age;
+                cout << "Enter student std : ";
+                cin >> std;
+            }
+            void getData()
+            {
+                cout << endl << "Id\t : " << id << endl
+                            << "Name\t : " << name << endl
+                            << "Age\t : " << age << endl
+                            << "Std\t : " << std << endl;
+            }	
+            static void header()
+            {
+                system("cls");
+                cout << "Id\tName\tAge\tstd\n======= ======= ======= =======\n";
+            }
+            void getDataInTable()
+            {
+                cout << id << "\t" << name << "\t" << age << "\t" << std << endl;
+            }
+    };
+
+    int main()
+    {
+        int n,i;
+        
+        cout << "Enter the Number of Student : ";
+        cin >> n;
+        
+        student s[n];
+        
+        for(i=0 ; i<n ; i++)
+        {
+            s[i].setData(i+1,n);
+        }
+        
+        student::header();
+        
+        for(i=0 ; i<n ; i++)
+        {
+            s[i].getDataInTable();
+        }
+    }
+
+><u>**Output**</u> : 
+
+![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_12/Screenshot_20221225_105601.png)
+
+<br>
+
+><u>**Aim**</u> : 13. WAP to make Railway Reservation System.
+Requirements:
+(A) User Input Train Number , Train Name , Source , Destination , Train Time.
+(B) Display Record By Search Train Number.
+(C) Minimum 3 Input Train Record.
+
+><u>**Program**</u> : 
+
+   #include<iostream>
+    using namespace std;
+
+    class railWay{
+        private:
+            int Train_Number;
+            string Train_Name;
+            string Source;
+            string Destination;
+            int Train_Time;
+        public:
+            void setData()
+            {
+                cout << "Enter Train Number : ";
+                cin >> Train_Number;
+                cout << "Enter Train Name : ";
+                cin >> Train_Name;
+                cout << "Enter Train Source : ";
+                cin >> Source;
+                cout << "Enter Train Destination : ";
+                cin >> Destination;
+                cout << "Enter Train Time : ";
+                cin >> Train_Time;
+            }
+            
+            void getData()
+            {
+                cout << endl << "T_Number\t : " << Train_Number << endl
+                            << "T_Name\t : " << Train_Name << endl
+                            << "T_Source\t : " << Source << endl
+                            << "T_Destination\t : " << Destination << endl
+                            << "T_Time\t : " << Train_Time << endl;
+            }
+                
+            void display()
+            {
+                if(Train_Number<=1000 || Train_Number<=2000 || Train_Number<=3000)
+                {
+                    cout << endl << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
+                    cout << Train_Name << " train is available... " << endl;
+                    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
+                }
+                else
+                {
+                    cout << endl << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
+                    cout << Train_Name << " train is Come in " << 12-Train_Time<< " o'clock at platform..." << endl;
+                    cout <<  "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
+                }
+            }	
+            static void header()
+            {
+                system("cls");
+                cout << "T_No.\tT_Name\tT_Sour\tT_Desti\tT_Time\n======= ======= ======= ======= =======\n";
+            }
+            
+            void getDataInTable()
+            {
+                cout << Train_Number << "\t" << Train_Name << "\t" << Source << "\t" << Destination << "\t" << Train_Time << endl;
+            }
+    };
+
+    int main()
+    {
+        railWay r1,r2,r3;
+        
+        r1.setData();
+        r2.setData();
+        r3.setData();
+        
+        railWay::header();
+        
+        r1.getDataInTable();
+        r2.getDataInTable();
+        r3.getDataInTable();
+        
+        r1.display();
+        r2.display();
+        r3.display();
+    }
+
+><u>**Output**</u> : 
+
+![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_13/Screenshot_20221225_110413.png)
+
+<br>
+
+><u>**Aim**</u> : 15. WAP which perform Addition of members of two different classes using friend Function.
+
+><u>**Program**</u> : 
+
+   #include<iostream>
+    using namespace std;
+
+    class sum2;
+
+    class sum1{
+        private:
+            int a = 10;
+        public:
+            friend void add(sum1,sum2);
+    }; 
+
+    class sum2{
+        private:
+            int b = 20;
+        public:
+            friend void add(sum1,sum2);	
+    };
+
+    void add(sum1 s1 , sum2 s2)
+    {
+        cout << "Addition : " << s1.a + s2.b << endl;
+    }
+
+    int main()
+    {
+        sum1 s1;
+        sum2 s2;
+        add(s1,s2);
+    }
+
+><u>**Output**</u> : 
+
+![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_15/Screenshot_20221225_110511.png)
+
+<br>
