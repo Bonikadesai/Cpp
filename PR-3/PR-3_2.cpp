@@ -53,9 +53,9 @@ class Time{
 						 << "Second2\t : " << second2 << endl
 						 << "Minute2\t : " << minute2 << endl
 						 << "Hours2\t  : " << hours2  << endl
-						 << "Second3\t : " << second3 << endl
-						 << "Minute3\t : " << minute3 << endl
-						 << "Hours3\t  : " << hours3  << endl;
+				 <<	endl << "Second\t : " << second3 << endl
+						 << "Minute\t : " << minute3 << endl
+						 << "Hours\t  : " << hours3  << endl;
 		}
 }; 
 

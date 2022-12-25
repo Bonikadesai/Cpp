@@ -40,8 +40,8 @@ class distans{
 						 << "Feet1\t : " << feet1 << endl
 						 << "Inch2\t : " << inch2 << endl
 						 << "Feet2\t : " << feet2 << endl
-						 << "Inch3\t : " << inch3 << endl
-						 << "Feet3\t : " << feet3 << endl;
+				 <<	endl << "Inch\t : " << inch3 << endl
+						 << "Feet\t : " << feet3 << endl;
 		}
 };
 
