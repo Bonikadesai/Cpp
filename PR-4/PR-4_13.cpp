@@ -45,7 +45,7 @@ class railWay{
 			else
 			{
 				cout << endl << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
-				cout << Train_Name << " train is Come in " << 60-Train_Time<< "minute in leter..." << endl;
+				cout << Train_Name << " train is Come in " << 12-Train_Time<< " o'clock at platform..." << endl;
 				cout <<  "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
 			}
 		}	

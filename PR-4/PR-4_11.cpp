@@ -32,7 +32,7 @@ class emp{
 		static void header()
 		{
 			system("cls");
-			cout << "Id\tName\tAge\Exp\n======= ======= ======= =======\n";
+			cout << "Id\tName\tAge\tExp\n======= ======= ======= =======\n";
 		}
 		void getDataInTable()
 		{
