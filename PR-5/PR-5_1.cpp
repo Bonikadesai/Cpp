@@ -17,7 +17,7 @@ class rectangle : public shape{
 	public:
 		void area()
 		{
-			cout << "Area of Ractangle is : " << 0.5*width*height << endl;
+			cout << "Area of Ractangle is : " << width*height << endl;
 		}
 };
 
@@ -25,7 +25,7 @@ class triangle : public shape{
 	public:
 		void area()
 		{
-			cout << "Area of Triangle is : " << width*height << endl;
+			cout << "Area of Triangle is : " << 0.5*width*height << endl;
 		}
 };
 
