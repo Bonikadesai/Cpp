@@ -1,3 +1,5 @@
+<h1><center>Unit-6 :- Inheritance <center> </h1>
+
 ><u>**Aim**</u> : 1. WAP to find sum of all three number’s cubes by
 implementing single level inheritance: Class X->Class Y
 Class X has following members: a, b & c attributes in
@@ -53,7 +55,7 @@ getData() methods
 
 ><u>**Output**</u> : 
 
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/Unit-6/Lecture-1/Image/UL-6_1/Screenshot_20221226_095342.png)
+
 
 <br>
 
@@ -126,6 +128,6 @@ Class P -> Class Q -> Class R
 
 ><u>**Output**</u> : 
 
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/Unit-6/Lecture-1/Image/UL-6_2/Screenshot_20221227_082107.png)
+
 
 <br>
