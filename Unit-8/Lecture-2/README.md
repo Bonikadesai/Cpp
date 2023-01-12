@@ -80,5 +80,7 @@ calculate() to perform all above operations.
     }
     
 ><u>**Output**</u> : 
+    
+![Screenshot_20230112_071107](https://user-images.githubusercontent.com/114163756/211955838-a2f3cd47-7395-4ac7-b493-b6f771107784.png)
 
 <br>
