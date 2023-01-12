@@ -72,6 +72,8 @@ classes
     }
 
 ><u>**Output**</u> : 
+    
+![Screenshot_20230112_070044](https://user-images.githubusercontent.com/114163756/211954740-db1f615c-442d-47da-b23a-6c6b1187425e.png)
 
 <br>
 
@@ -137,5 +139,7 @@ inheriting constructors in hybrid inheritance.
     }
 
 ><u>**Output**</u> : 
+    
+![Screenshot_20230112_070114](https://user-images.githubusercontent.com/114163756/211954801-ce29d38d-f5fd-469e-9ac0-0c117fe8cdef.png)
 
 <br>
