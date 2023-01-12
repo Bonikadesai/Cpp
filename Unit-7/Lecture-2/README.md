@@ -50,5 +50,7 @@ class
     }
 
 ><u>**Output**</u> : 
+    
+![Screenshot_20230112_070539](https://user-images.githubusercontent.com/114163756/211955226-944405f3-d18f-4421-b5d1-b064ba38a712.png)
 
 <br>
