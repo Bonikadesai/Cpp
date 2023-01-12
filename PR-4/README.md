@@ -70,11 +70,9 @@
 
 ><u>**Output**</u> : 
 
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_1/Screenshot_20221225_103116.png)
-
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_1/Screenshot_20221225_103139.png)
-
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_1/Screenshot_20221225_103149.png)
+![Screenshot_20221225_064611](https://user-images.githubusercontent.com/114163756/211957631-7ce0535a-3da3-416d-8288-8864cbd8967a.png)
+![Screenshot_20221225_064628](https://user-images.githubusercontent.com/114163756/211957661-6f3c730b-a170-4831-a1ab-f94d434bcc3f.png)
+![Screenshot_20221225_064650](https://user-images.githubusercontent.com/114163756/211957684-e44c2749-2ea3-4689-9fa1-e72f8a4fc9ba.png)
 
 <br>
 
@@ -124,7 +122,7 @@
 
 ><u>**Output**</u> : 
 
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_2/Screenshot_20221225_103745.png)
+![Screenshot_20221225_103745](https://user-images.githubusercontent.com/114163756/211957763-e1175b33-2ccb-42f8-b305-c4fd3ccdea20.png)
 
 <br>
 
@@ -185,7 +183,7 @@
 
 ><u>**Output**</u> : 
 
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_3/Screenshot_20221225_103841.png)
+![Screenshot_20221225_103841](https://user-images.githubusercontent.com/114163756/211957809-811a4742-69fd-4bfd-beda-5b159ca60e49.png)
 
 <br>
 
@@ -305,9 +303,8 @@
 
 ><u>**Output**</u> : 
 
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_4/Screenshot_20221225_104204.png)
-
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_4/Screenshot_20221225_104400.png)
+![Screenshot_20221225_065210](https://user-images.githubusercontent.com/114163756/211957849-14ce424f-a304-452c-a652-461db3ed6754.png)
+![Screenshot_20221225_065225](https://user-images.githubusercontent.com/114163756/211957885-e6cf346c-3a50-4bfe-bfa3-65d69333f472.png)
 
 <br>
 
@@ -356,7 +353,7 @@
 
 ><u>**Output**</u> : 
 
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_5/Screenshot_20221225_104617.png)
+![Screenshot_20221225_104617](https://user-images.githubusercontent.com/114163756/211957921-b0e60cd6-2620-4b13-8d7b-880e765337bb.png)
 
 <br>
 
@@ -381,7 +378,7 @@
 
 ><u>**Output**</u> : 
 
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_6/Screenshot_20221225_104733.png)
+![Screenshot_20221225_104733](https://user-images.githubusercontent.com/114163756/211957987-0a55c3ec-ae9a-426c-b365-9f10fa05151f.png)
 
 <br>
 
@@ -414,7 +411,7 @@
 
 ><u>**Output**</u> : 
 
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_7/Screenshot_20221225_104831.png)
+![Screenshot_20221225_104831](https://user-images.githubusercontent.com/114163756/211958027-b3543a9f-f542-48e1-b33b-a62174af2d49.png)
 
 <br>
 
@@ -464,7 +461,7 @@
 
 ><u>**Output**</u> : 
 
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_8/Screenshot_20221225_104920.png)
+![Screenshot_20221225_104920](https://user-images.githubusercontent.com/114163756/211958056-dcd2c0ad-d2f6-4baf-8c6f-0ad37893d85f.png)
 
 <br>
 
@@ -503,7 +500,7 @@
 
 ><u>**Output**</u> : 
 
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_9/Screenshot_20221225_105028.png)
+![Screenshot_20221225_105028](https://user-images.githubusercontent.com/114163756/211958102-e3d57290-8400-4f9e-9cf1-d011f8c33a56.png)
 
 <br>
 
@@ -557,7 +554,7 @@
 
 ><u>**Output**</u> : 
 
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_10/Screenshot_20221225_105119.png)
+![Screenshot_20221225_105119](https://user-images.githubusercontent.com/114163756/211958153-7647e7dc-8fa6-4036-acfb-ec00459925c7.png)
 
 <br>
 
@@ -631,61 +628,7 @@
 
 ><u>**Output**</u> : 
 
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_11/Screenshot_20221225_105418.png)
-
-<br>
-
-><u>**Aim**</u> : 10. WAP to create a class which Set values of data members using default, parameterized and copy constructor.
-
-><u>**Program**</u> : 
-
-    #include<iostream>
-    using namespace std;
-
-    class hotel{
-        private:
-            int id;
-            string name;
-        public:
-            hotel ()
-            { 
-                cout << "Welcome to the BLUE-VELLY HOTEL.." << endl << endl;
-            }
-                
-            hotel(int id , string name)
-            {
-                this->id = id;
-                this->name = name;
-                getData();
-            }
-            
-            hotel(hotel &h)
-            {
-                id = h.id;
-                name = h.name;
-                getData();	
-            }
-            void getData()
-            {
-                cout << "Id\t : " << id << endl
-                    << "H_name\t : " << name << endl;	
-            }
-    };
-
-    int main()
-    {
-        hotel h;
-        hotel h1(1,"Navjivan");
-        hotel h2(2,"Amiras");
-        hotel h3(3,"Avadh");
-        hotel h4 = h1;
-        h4.getData();
-        hotel h5(h2);
-    }
-
-><u>**Output**</u> : 
-
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_10/Screenshot_20221225_105119.png)
+![Screenshot_20221225_105418](https://user-images.githubusercontent.com/114163756/211958317-d1f7820d-4e75-40dc-95b4-9dcbb179b8e0.png)
 
 <br>
 
@@ -759,7 +702,7 @@
 
 ><u>**Output**</u> : 
 
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_12/Screenshot_20221225_105601.png)
+![Screenshot_20221225_105601](https://user-images.githubusercontent.com/114163756/211958364-b6f8c92f-ccbb-493a-88d7-52d658883fcd.png)
 
 <br>
 
@@ -853,7 +796,7 @@ Requirements:
 
 ><u>**Output**</u> : 
 
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_13/Screenshot_20221225_110413.png)
+![Screenshot_20221225_110413](https://user-images.githubusercontent.com/114163756/211958422-5303cb09-8012-404e-b923-eca8fed5d4f6.png)
 
 <br>
 
@@ -1047,10 +990,9 @@ Requirements:
     }
 
 ><u>**Output**</u> : 
-
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_14/Screenshot_20221226_085319.png)
-
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_14/Screenshot_20221226_085344.png)
+	
+![Screenshot_20221226_085319](https://user-images.githubusercontent.com/114163756/211958467-cd0399f2-9e4f-4caa-90b5-3eea33a7036b.png)
+![Screenshot_20221226_085344](https://user-images.githubusercontent.com/114163756/211958497-a732cce9-c18c-43a9-8013-98f7011bc50c.png)
 
 <br>
 
@@ -1091,7 +1033,7 @@ Requirements:
 
 ><u>**Output**</u> : 
 
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_15/Screenshot_20221225_110511.png)
+![Screenshot_20221225_110511](https://user-images.githubusercontent.com/114163756/211958600-161af045-f82e-48d0-bb91-4c5a1e5ed0c6.png)
 
 <br>
 
@@ -1287,14 +1229,10 @@ Requirements:
 
 ><u>**Output**</u> : 
 
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_16/Screenshot_20221226_084152.png)
-
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_16/Screenshot_20221226_084209.png)
-
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_16/Screenshot_20221226_084518.png)
-
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_16/Screenshot_20221226_084530.png)
-
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-4/Image/PR-4_16/Screenshot_20221226_084600.png)
+![Screenshot_20221226_084152](https://user-images.githubusercontent.com/114163756/211958696-b39c9279-e6ce-4e67-83e6-3210c55e1db4.png)
+![Screenshot_20221226_084209](https://user-images.githubusercontent.com/114163756/211958713-cef78557-2293-4090-a1d6-7b22b5dd5fa1.png)
+![Screenshot_20221226_084518](https://user-images.githubusercontent.com/114163756/211958735-e7428068-fa8a-4bac-b522-658c5b72ad7a.png)
+![Screenshot_20221226_084530](https://user-images.githubusercontent.com/114163756/211958747-504148b5-6b3e-4648-9441-c59cd31fc97c.png)
+![Screenshot_20221226_084600](https://user-images.githubusercontent.com/114163756/211958769-97a3c8bc-c187-4103-9824-d3fb14835960.png)
 
 <br>
