@@ -55,7 +55,7 @@ getData() methods
 
 ><u>**Output**</u> : 
 
-
+![Screenshot_20230112_065831](https://user-images.githubusercontent.com/114163756/211954574-f9192d00-2f77-4f48-bf9c-2cd3472b7310.png)
 
 <br>
 
@@ -128,6 +128,6 @@ Class P -> Class Q -> Class R
 
 ><u>**Output**</u> : 
 
-
+![Screenshot_20230112_065900](https://user-images.githubusercontent.com/114163756/211954607-2d329bf7-ca71-4089-8f7d-14e6620b7678.png)
 
 <br>
