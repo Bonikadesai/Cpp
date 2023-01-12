@@ -101,7 +101,6 @@
 
 ><u>**Output**</u> : 
 
-![Screenshot_20221225_052014](https://user-images.githubusercontent.com/114163756/211956221-98e1e61c-fd3e-4ecb-83de-5f86f78013b8.png)
 
 <br>
 
