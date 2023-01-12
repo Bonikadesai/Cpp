@@ -89,5 +89,7 @@ accordingly.
     }
 
 ><u>**Output**</u> : 
+    
+![Screenshot_20230112_071035](https://user-images.githubusercontent.com/114163756/211955743-ccc72c38-a291-4076-bbba-2dad33b046d0.png)
 
 <br>
