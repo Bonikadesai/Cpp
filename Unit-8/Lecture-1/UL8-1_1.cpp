@@ -1,13 +1,6 @@
 #include<iostream>
 using namespace std;
-/*
-- company_name
-- manager_salary
-- employee_salary
-- total_staff
-- total_annual_revenue
-- can_terminate
-*/
+
 class admin{
     private :
         int total_annual_revenue;
