@@ -40,7 +40,7 @@
 
 ><u>**Output**</u> : 
 
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-2/Image/PR-2_1/Screenshot_20221225_044402.png)
+![Screenshot_20221225_044402](https://user-images.githubusercontent.com/114163756/211956555-b4cab4d4-4bb9-4e37-a37f-ebd3f4d479e2.png)
 
 <br>
 
@@ -101,7 +101,8 @@
      }
 
 ><u>**Output**</u> : 
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-2/Image/PR-2_2/Screenshot_20221225_044832.png)
+
+![Screenshot_20221225_044832](https://user-images.githubusercontent.com/114163756/211956601-5d7b3379-b40d-48a2-a716-250585c00cec.png)
 
 <br>
 
@@ -139,7 +140,7 @@
 
 ><u>**Output**</u> : 
 
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-2/Image/PR-2_3/Screenshot_20221225_044940.png)
+![Screenshot_20221225_044940](https://user-images.githubusercontent.com/114163756/211956686-0ee193b0-68f7-4179-92fd-ac21b2d66b03.png)
 
 <br>
 
@@ -178,7 +179,6 @@
 
 ><u>**Output**</u> : 
 
-![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-2/Image/PR-2_4/Screenshot_20221225_045106.png)
+![Screenshot_20221225_045106](https://user-images.githubusercontent.com/114163756/211956745-33d1fb2b-3cd5-40e3-bc1e-2b8d80c6f35c.png)
 
 <br>
-
