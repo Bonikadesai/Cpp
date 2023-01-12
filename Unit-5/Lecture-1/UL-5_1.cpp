@@ -44,12 +44,12 @@ class student{
 		static void header()
 		{
 			system("cls");
-			cout << "S_id\tS_name\tS_age\tS_courseS_email\tS_city\tS_college\n======= ======= ======= ======= ======= ======= =======\n";
+			cout << "S_id\tS_name\tS_age\tS_city\tS_clg\tS_cors\tS_email\n======= ======= ======= ======= ======= ======= =======\n";
 		}
 		
 		void getDataInTable()
 		{
-			cout << stu_id << "\t" << stu_name << "\t" << stu_age << "\t" << stu_course << "\t" << stu_email << "\t" << stu_city << "\t" << stu_college << endl; 
+			cout << stu_id << "\t" << stu_name << "\t" << stu_age << "\t" << stu_course << "\t" << stu_city << "\t" << stu_college << "\t" << stu_email << endl; 
 		}
 };
 

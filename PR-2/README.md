@@ -40,15 +40,15 @@
 
 ><u>**Output**</u> : 
 
-    ![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-2/Image/PR-2_1/Screenshot_20221225_044402.png)
+![Error Text](https://github.com/Bonikadesai/Cpp/blob/master/PR-2/Image/PR-2_1/Screenshot_20221225_044402.png)
 
-    <br>
+<br>
 
-    ><u>**Aim**</u> : 2. WAP to swap elements of two integer arrays using user define function.
+><u>**Aim**</u> : 2. WAP to swap elements of two integer arrays using user define function.
 
-    ><u>**Program**</u> : 
+><u>**Program**</u> : 
 
-        #include<iostream>
+    #include<iostream>
     using namespace std;
 
     int swap(int a[] , int n)
