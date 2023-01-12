@@ -46,6 +46,8 @@ class
     }
 
 ><u>**Output**</u> : 
+    
+![Screenshot_20230112_070507](https://user-images.githubusercontent.com/114163756/211955048-9af0bea6-4330-473f-a7e2-07a738f6b05f.png)
 
 <br>
 
@@ -89,5 +91,7 @@ below mentioned criteria:
     }
 
 ><u>**Output**</u> : 
+    
+![Screenshot_20230112_070520](https://user-images.githubusercontent.com/114163756/211955127-bc7cfac5-72e3-4f6e-acda-0c1442d6fc08.png)
 
 <br>
