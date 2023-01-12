@@ -46,5 +46,7 @@ an uppercase letter
     }
 
 ><u>**Output**</u> : 
+    
+![Screenshot_20230112_071341](https://user-images.githubusercontent.com/114163756/211955986-5b7353c9-cf93-446a-bfa7-23b9ef3342b1.png)
 
 <br>
