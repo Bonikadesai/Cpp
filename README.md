@@ -75,6 +75,8 @@
 
 **Output** :-
 
+![Screenshot_20230112_111029](https://user-images.githubusercontent.com/114163756/212536256-ec1c35ad-5d39-4905-9dcf-0ff2565b2f74.png)
+
 <br>
 
 <b> => Manipulator Class (Input class Method) :- </b><br>
@@ -532,7 +534,7 @@ Changes limited to function.
 <b> => What is Destructor ? </b><br>
     - A block of code which is automatically invoked when object is destroyed or deleted.
 
-<b> => Rules to create Destructor ? </b><br>
+<b> => Rules to create Destructor :-  </b><br>
 * It's name must be same as class's name starts with tild(~) Operator.
 * It must not have any return data type.
     - return data type (void , int , char)
@@ -572,3 +574,100 @@ Ex :
 
 ><u>**Output**</u> : 
 
+![Screenshot_20221225_105028](https://user-images.githubusercontent.com/114163756/212536292-0f17ee80-65f2-4d15-834b-69a2d24c7d0f.png)
+
+
+<br><br>
+
+><h1><center>Unit-6 :- Inheritance <center> </h1>
+
+<b> => What is Inheritance ? </b><br>
+* Share data among class.
+* Share Attributes and methods from one class to another class.
+<table border=2>
+
+<tr>
+    <td>Super Class</td>
+    <td>Base class</td>
+    <td>Parent class</td>
+</tr>
+<tr>
+    <td>Sub class</td>
+    <td>Derived class</td>
+    <td>Child class</td>
+</tr>
+
+</table>
+
+<b>Syntax :-</b><br>
+
+    class parent{
+        private:
+            attrinutes;
+        public:
+            methods;
+    };
+
+    class child : access modifier(public) parent{
+        // All the parent class's data is accessible here.
+    };
+
+    int main()
+    {
+        child c;
+        c.parentData();
+    }
+
+<b> => Types of Inheritance :- </b><br>
+* Single level Inheritance
+* Multi level Inheritance
+* Multiple Inheritance
+* Hierarchical Inheritance
+* Hybrid (Combination) Inheritance
+
+<b> * Single level Inheritance :- </b><br>
+- One parent class
+- One child class
+- Min class :- 2
+- Max class :- 2
+
+<b> * Multi level Inheritance :- </b><br>
+- One parent class
+- N child class
+- Min class :- 3
+- Max class :- N
+
+<b> * Multiple Inheritance :- </b><br>
+- Two parent class
+- One child class
+- Min class :- 3
+- Max class :- N
+
+<b> * Hierarchical Inheritance :- </b><br>
+- One parent class
+- Two child class
+- Min class :- 3
+- Max class :- N
+
+<b> * Hybrid Inheritance :- </b><br>
+- Min class :- 4
+- Max class :- N
+- Multiple + Hierarchical = Hybrid
+- Ambigouce create is Two inheritance :- Multiple & Hybrid
+
+<br><br>
+ 
+><h1><center>Unit-7 :- Polymorphism <center> </h1>
+
+- <b>Polymorphism :-</b> Polymorphism is a method were are use can create multiple formation or structure of single method.
+
+* polymorphism is a combination of two greek words <b>"Poly = Multiple , Morphism :- Structure / Behaviour / Forms".</b>
+
+<b> => Types of Polymorphism :- </b><br>
+
+1. Run time :- 
+    - Method Overiding
+    - Virtual Function
+2. Compile time :-
+    - Method Overloading
+    - Opertor Overloading
