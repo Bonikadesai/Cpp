@@ -8,17 +8,17 @@ int add(int a , int b)
 	return sum;
 }
 
-int average(int a , int b)
+int average(int a )
 {
 	int avg;
-	avg = add(a,b) / 2;
+	avg = a / 2;
 	cout << "Average : " << avg << endl;
 	return avg;
 }
 
 int main()
 {
-	int a,b,sum=0;
+	int a,b;
 	
 	cout << "Enter the value of A : ";
 	cin >> a;
@@ -26,8 +26,7 @@ int main()
 	cin >> b;
 	
 	cout << "Sum is : " << add(a,b) << endl;
-	average(add(a,b),sum);
+	average(add(a,b));
 
-	
 	return 0;
 } 
