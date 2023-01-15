@@ -713,3 +713,181 @@ Ex :
 </table>
 
 <b> * Operator Overloading :- </b>When we create same method with multiple parameters in same class. It's called method overloading.
+
+<b> => Types of Operator Overloading :- </b><br>
+1. Unary Operator Overloading
+2. Binary Operator Overloading
+
+<b> 1) Unary Operator Overloading :- </b> 
+
+Ex :
+
+    class demo{
+        int a;
+        public:
+            void setData()
+            {
+                cout << "Enetr a : ";
+                cin >> a;
+            }
+            void getData()
+            {
+                cout << "A : " << a << endl;
+            }
+
+    // Post Increment (Same here Post Decrement)
+
+    demo operator++(int)
+    {
+        demo tmp;
+        tmp.a = this-> a++;
+        return tmp;
+    }
+
+    // Pre Increment (Same here Pre Decrement)
+
+    demo operator++()
+    {
+        demo tmp;
+        tmp.a = ++a;
+        return tmp;
+    }
+    };
+
+    int main()
+    {
+        demo d1 , d2;
+        d1.setData();
+        
+        d2 = ++d1; // ++d1 => d1 = 1 + d1; // d1.operator++()
+
+        d1.getData();
+        d2.getData();
+    }
+
+<b> 2) Binary Operator Overloading :- </b> 
+
+Ex :
+
+    class demo{
+        int a;
+        public:
+            void setData()
+            {
+                cout << "Enetr a : ";
+                cin >> a;
+            }
+            void getData()
+            {
+                cout << "A : " << a << endl;
+            }
+
+    demo operator+(demo d)
+    {
+        demo tmp;
+        tmp.a = this-> a + d.a;
+        return tmp;
+    }
+    };
+
+    int main()
+    {
+        demo d1 , d2 , d3;
+        d1.setData();
+        d2.setData();
+
+        d3 = d1 + d2; // d1.operator+(d2)
+
+        d1.getData();
+        d2.getData();
+        d3.getData();
+    }
+
+<br><br>
+
+><h1><center>Unit-8 :- Data Abstraction <center> </h1>
+
+<b> => Data Abstraction (hiding) :- </b><br>
+* Hide logic from user.
+* Prevent user from attributes.
+* Latin :- Abs : Draw , Trehere : Away.
+    - It's mean draw away (To restric).
+* Use access modifiers.
+
+<b>* Abstract Class :- </b><br>
+    - Pure virtual function.<br>
+    - Can't be instanicated (Object create).<br>
+    - Private(default) :- Only one class limited.<br>
+    - public :- All class access.<br>
+    - Protected :- Only child class & parent class Limited.<br>
+
+<b> => Pointer Object :- </b><br>
+* An object which store an address of another object.
+* Pointer objects can be create of same class's object only.
+* It can be also created for derived class when derived class and base class both have the overriden virtual function.
+
+Ex : 
+
+    demo d1;
+    demo *d2;   // pointer Object
+    d2 = &d1;
+
+* All the methods or attributes of pointer object can be accessed by '->' arrow instead of '.'
+
+        d2 -> setData();
+        d1 -> setData();
+
+<b> => Call by Value :- </b> limited to the specific scope.<br>
+
+<b> => Call by Reference :- </b> Occures direct changes using address.<br>
+
+Ex : 
+
+    class A{
+        int a;
+        public:
+            void setData()
+            {
+                cout << "Enter A : ";
+                cin >> a;
+            }
+            void getData()
+            {
+                cout << "A : " << a << endl;
+            }
+            int UDF(A *a)
+            {
+                a -> setData();
+            }
+    };
+
+    int main()
+    {
+        A a1;
+        A *ptr;
+        ptr = &a1;
+
+        // a1.setData();
+        // ptr -> getData();
+
+        UDF(&a1);
+        a1.getData();
+    }
+
+<b> => Virtual Function :- </b><br>
+
+- It indicates the single existance of any methode to the whole program.
+- It can be used to remove ambiguity permently.
+- Abstract class (using pure Virtual functional).
+
+<b> => Abstract class (Using pure virtual function) :- </b><br>
+
+- A class which cannot be instanciated.
+- Cannot create object of that class.
+- All the mrthods or functionalaties of abstract class cannot be used directly.
+- In c++ , abstract class can be created using 'Pure virtual Function.'
+- <b> Pure virtual Function :- </b>
+    - Virtual function with initial value ZERO.
+    - Ex :-<b> virtual funcName (<Parms>) = 0; </b>
+    - It doesn't have body.
+    - Pure virtual function is only declaration.
