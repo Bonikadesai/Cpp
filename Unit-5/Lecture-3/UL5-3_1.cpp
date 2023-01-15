@@ -3,52 +3,64 @@ using namespace std;
 
 class time2;
 class time1{
-	private :
-		int hour1,minute1,second1;
-	public :
-		void setData1()
+	private:
+		int sec;
+		int hour;
+		int min;
+	public:
+		void setTime()
 		{
-			cout<<"Enter hour1 : ";
-			cin>>hour1;
-			cout<<"Enter minute1 : ";
-			cin>>minute1;
-			cout<<"Enter second1 : ";
-			cin>>second1;
-			cout<<endl;
- 	 	}  
-  friend void time3(time1,time2);
-};
-
-class time2{
-	private :
-		int hour2,minute2,second2;
-	public :
-		void setData2()
+			cout << "Enter second1 : ";
+			cin >> sec;
+		}
+		void getTime()
 		{
-			cout<<"Enter hour2 : ";
-			cin>>hour2;
-			cout<<"Enter minute2 : ";
-			cin>>minute2;
-			cout<<"Enter second2 : ";
-			cin>>second2;
-			cout<<endl;
+			cout << "Second1 : " << sec << endl;
 		}
 		friend void time3(time1,time2);
 };
 
+class time2{
+	private:
+		int sec;
+		int hour;
+		int min;
+	public:
+		void setTime()
+		{
+			cout << "Enter second2 : ";
+			cin >> sec;
+		}
+		void getTime()
+		{
+			cout << "Second2 : " << sec << endl;
+		}
+		friend void time3(time1,time2);
+};
 void time3(time1 t1,time2 t2)
 {
-	cout<<"Time : " << t1.hour1 + t2.hour2 << " : " << t1.minute1 + t2.minute2 << " : " << t1.second1 + t2.second2;
+	int s,h,m;
+	s = t1.sec + t2.sec;
+	m = t1.min + t2.min;
+	h = t1.hour + t2.hour;
+	while(s>=60)
+	{
+		s = s-60;
+		m++;	
+	}
+	while(m>=60)
+	{
+		m = m - 60;
+		h++;
+	}	
+	cout << h << " : " << m << " : " << s << endl; 
 }
 
 int main()
 {
-	time1 t1;
-	time2 t2;
-	
-	t1.setData1();
-	t2.setData2();
-	time3(t1,t2);
+	time1 T1;
+	T1.setTime();
+	time2 T2;
+	T2.setTime();
+	time3 (T1,T2);
 }
-
-
