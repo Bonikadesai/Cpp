@@ -671,3 +671,45 @@ Ex :
 2. Compile time :-
     - Method Overloading
     - Opertor Overloading
+
+<b> * Method Overloading :- </b>When we create same method with multiple parameters in same class. It's called method overloading.
+
+* <b>Rules :- </b><br>
+    - class must be same.
+    - Name must be same of all methods.
+    - Parameters must be different of all methods.
+
+<b> * Method Overiding :- </b>When we Recreate same method with derived class parameters same. It's called method overiding.
+
+* <b>Rules :- </b><br>
+    - class must be derived (child).
+    - Name must be same of all methods.
+    - Parameters must be same of all methods.
+
+<b> => Main Different method overloading & Method Overiding :- </b><br>
+
+<table border=2>
+
+<tr>
+    <th></th>
+    <th>Class</th>
+    <th>Name</th>
+    <th>Parameters</th>
+</tr>
+<tr>
+    <td>Method Overloading</td>
+    <td>Same</td>
+    <td>Same</td>
+    <td>Different</td>
+</tr>
+
+<tr>
+    <td>Method Overiding</td>
+    <td>Derived</td>
+    <td>Same</td>
+    <td>Same</td>
+</tr>
+
+</table>
+
+<b> * Operator Overloading :- </b>When we create same method with multiple parameters in same class. It's called method overloading.
